@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -133,41 +136,45 @@ li {
 
 
 /* content */
-.main-content {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* .main-content {
     position: relative;
-    background-color: rgba(255, 255, 255, 0.5);
-    /* Semi-transparent white background */
-}
-
-.image-blur {
-    position: absolute;
-    width: 640.69px;
-    height: 1004.23px;
-    top: -234px;
-    left: 861px;
-    gap: 0px;
-    opacity: 0;
-    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/021/039/796/small/abstract-technology-futuristic-neon-circle-glowing-blue-and-pink-light-lines-with-speed-motion-blur-effect-on-dark-blue-background-vector.jpg');
-    /* Replace 'path_to_your_image.jpg' with the path to your image */
-    background-size: cover;
-    background-position: center;
-    transform: rotate(-46.19deg);
-    /* Add any other styles you need */
-}
-
-
-/* .awesom-ui {
-    width: 170px;
-    height: 37.29px;
-    top: 31px;
-    left: 112px;
-    gap: 0px;
-    border-radius:
-        10.26px 0px 0px 0px;
-    opacity: 0px;
 } */
+
+
+.awesom-ui {
+    text-align: center;
+    color: #252432;
+    width: 764px;
+    height: 315px;
+    top: 188px;
+    left: 338px;
+    gap: 0px;
+    border-radius: 10px 0px 0px 0px;
+    opacity: 0px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 330px;
+
+}
+
+.awesom-ui h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.awesom-ui button {
+    background-color: #252432;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.awesom-ui button:hover {
+    background-color: #252432;
+}
