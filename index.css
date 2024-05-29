@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main-container {
+    width: 1440px;
+    height: 5371px;
+    top: -2053px;
+    left: -1187px;
+    gap: 0px;
+    opacity: 0px;
+    background: #F5F8FF;
+    /* display: flex; */
+    /* Center the main container */
+}
+
+.main-header {
+    width: 1440px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center the header content horizontally */
+    position: relative;
+}
+
+.logo-con {
+    position: absolute;
+    top: 31px;
+    left: 112px;
+    display: flex;
+    align-items: center;
+    /* Center items vertically */
+}
+
+.img-logo {
+    width: 37.29px;
+    height: 37.29px;
+    border-radius: 10.26px 0px 0px 10.26px;
+    /* Adjust border radius */
+}
+
+.faster-ui {
+    margin-left: 10px;
+    /* Add margin between logo and text */
+    font-size: 20px;
+    color: black;
+}
+
+
+
+.nav-con {
+    width: 499px;
+    height: 68px;
+    top: 16px;
+    left: 471px;
+    gap: 0px;
+    border-radius: 20px 20px 20px 20px;
+    border: 1px 0px 0px 0px #FFFFFF;
+    opacity: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF99;
+}
+
+.main-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.a1 {
+    width: 46px;
+    height: 24px;
+    top: 38px;
+    left: 527px;
+    gap: 0px;
+    opacity: 0px;
+    color: #252432;
+}
+
+.a2 {
+    color: #8987A1;
+}
+
+.a3 {
+    color: #8987A1;
+}
+
+.a4 {
+    color: #8987A1;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+
+.login-con {
+    position: absolute;
+    right: 112px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.signin,
+.signup {
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signin {
+    opacity: 0.8;
+}
+
+.signup {
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #4E47FF;
+    color: white;
+}
+
+
+/* content */
+.main-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Semi-transparent white background */
+}
+
+.image-blur {
+    position: absolute;
+    width: 640.69px;
+    height: 1004.23px;
+    top: -234px;
+    left: 861px;
+    gap: 0px;
+    opacity: 0;
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/021/039/796/small/abstract-technology-futuristic-neon-circle-glowing-blue-and-pink-light-lines-with-speed-motion-blur-effect-on-dark-blue-background-vector.jpg');
+    /* Replace 'path_to_your_image.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    transform: rotate(-46.19deg);
+    /* Add any other styles you need */
+}
+
+
+/* .awesom-ui {
+    width: 170px;
+    height: 37.29px;
+    top: 31px;
+    left: 112px;
+    gap: 0px;
+    border-radius:
+        10.26px 0px 0px 0px;
+    opacity: 0px;
+} */
