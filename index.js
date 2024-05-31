@@ -1,9 +1,10 @@
 var images = [
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJlkaBK7dfubDDSWUx1YGMGPZS3iv8GTYvSg&s",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqsIWpffrrUcIuyEcgCc0sj9hnXYd9KdRyMg&s",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkEVVz0QcesA87k0Bbw51D3vRzNb4aG0Teew&s",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsXEXh5v6oVxbg7COkMv9soZebfGiFBTySKg&s",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvODSy_tbgYfsX8igUoj-sObEPLhYMlJ5Ppg&s",
+  "https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "https://images.pexels.com/photos/36762/scarlet-honeyeater-bird-red-feathers.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "https://images.pexels.com/photos/1563355/pexels-photo-1563355.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 ];
 
 var currentIndex = 0;
@@ -46,3 +47,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+function updateDateTime() {
+  const now = new Date();
+  const options = { weekday: "long", month: "long", day: "numeric" };
+  const dateString = now.toLocaleDateString(undefined, options);
+  const timeString = now.toLocaleTimeString(undefined, {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+
+  document.getElementById("date").textContent = `Date: ${dateString}`;
+  document.getElementById("time").textContent = `Time: ${timeString}`;
+}
+
+function rescheduleMeeting() {
+  updateDateTime();
+}
+
+// Initial update
+updateDateTime();
+
+// Optional: update every minute
+setInterval(updateDateTime, 60000);
